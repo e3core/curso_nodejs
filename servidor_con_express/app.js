@@ -20,6 +20,7 @@ app.get('/',(request,response)=>{
         "ites": [1,2,3,4,5,6,7,8,9]
     }
     response.render('index',data)
+    console.log(typeof(data))
 })
 
 app.use('/users',router)
